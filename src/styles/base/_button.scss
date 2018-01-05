@@ -1,0 +1,21 @@
+.btn-signup {
+  display: inline-block;
+  padding: 10px 25px;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-left: 10px;
+  border-radius: 4px;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.btn-signin {
+  color: #fff;
+  display: inline-block;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  &:hover {
+    color: #fff;
+  }
+}

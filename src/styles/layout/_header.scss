@@ -9,6 +9,7 @@
 .header-mobile-content {
   display: none;
   @include breakpoint(767) {
+    padding: 10px 0;
     @include flexbox();
     @include align-items(center);
     @include justify-content(space-between);
@@ -52,6 +53,16 @@
     @include flexbox();
     @include align-items(center);
     @include justify-content(space-between);
+    @include breakpoint(991) {
+      .btn-signin {
+        padding: 7px 5px 5px;
+        font-size: 12px;
+      }
+      .btn-signup {
+        padding: 7px 8px 5px;
+        font-size: 12px;
+      }
+    }
   }
   .top-nav-menu {
     list-style: none;
@@ -60,6 +71,9 @@
   .top-nav-menu-item {
     padding: 0 20px;
     display: inline-block;
+    @include breakpoint(991) {
+      padding: 0 5px;
+    }
     .item-link {
       font-family: $SSB;
       text-transform: uppercase;
@@ -71,7 +85,7 @@
     opacity: 0;
     visibility: hidden;
     position: fixed;
-    top: 65px;
+    top: 70px;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -103,6 +117,13 @@
   margin-right: 20px;
   height: 65px;
   width: 65px;
+  @include breakpoint(991) {
+    margin-right: 10px;
+  }
+  @include breakpoint(767) {
+    height: 50px;
+    width: 50px;
+  }
   .logo-link {
     display: inline-block;
   }

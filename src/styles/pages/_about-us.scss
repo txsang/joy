@@ -5,6 +5,12 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    @include breakpoint(1199) {
+      height: 450px;
+    }
+    @include breakpoint(991) {
+      height: 350px;
+    }
   }
   .title-block {
     font-family: $SSB;
@@ -12,6 +18,14 @@
     color: #000000;
     letter-spacing: 0;
     line-height: 52px;
+    @include breakpoint(991) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    @include breakpoint(480) {
+      font-size: 25px;
+      line-height: 35px;
+    }
   }
   .description-block,
   .vision-block,
@@ -45,7 +59,38 @@
       letter-spacing: 0;
       line-height: 26px;
       margin-bottom: 26px;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
+    @include breakpoint(1199) {
+      padding-top: 50px;
+      .content-left {
+        width: 40%;
+        padding-right: 30px;
+        margin-bottom: 10px;
+        .title-block br {
+          display: none
+        }
+      }
+      .content-right {
+        width: 60%;
+      }
+    }
+    @include breakpoint(480) {
+      padding-top: 20px;
+      .content-left {
+        width: 100%;
+        padding-right: 0px;
+        .title-block {
+          margin-bottom: 20px
+        }
+      }
+      .content-right {
+        width: 100%;
+      }
+    }
+
   }
   .vision-block {
     padding-top: 100px;
@@ -54,11 +99,21 @@
       @include align-items(center);
       @include justify-content(flex-start);
       margin-bottom: 5px;
+      @include breakpoint(480) {
+        margin-bottom: 15px;
+        @include align-items(flex-start);
+      }
       .wrap-img {
         min-width: 110px;
         min-height: 110px;
         width: 110px;
         height: 110px;
+        @include breakpoint(480) {
+          min-width: 80px;
+          min-height: 80px;
+          width: 80px;
+          height: 80px;
+        }
       }
       .item-desc {
         font-family: $RR;
@@ -66,8 +121,22 @@
         color: #575C5F;
         letter-spacing: 0;
         line-height: 27px;
+        @include breakpoint(480) {
+          font-size: 14px;
+          line-height: 25px;
+        }
       }
     }
+    @include breakpoint(1199) {
+      padding-top: 50px;
+    }
+    @include breakpoint(480) {
+      padding-top: 20px;
+      .title-block {
+        margin-bottom: 10px
+      }
+    }
+
   }
   .patner-block {
     padding-top: 60px;
@@ -88,6 +157,14 @@
       width: 33.3333333333%;
       float: left;
       padding: 0 13px;
+      @include breakpoint(480) {
+        width: 50%;
+        margin-bottom: 10px;
+      }
+      @include breakpoint(370) {
+        width: 100%;
+        margin-bottom: 10px;
+      }
       .wrap-img {
         margin-bottom: 15px;
       }
@@ -98,6 +175,10 @@
         color: #3E3E3E;
         letter-spacing: 0;
         line-height: 43px;
+        @include breakpoint(480) {
+          font-size: 18px;
+          line-height: 25px;
+        }
       }
       .patner-job {
         text-align: center;
@@ -106,6 +187,19 @@
         color: #949AA0;
         letter-spacing: 0;
         line-height: 25px;
+        @include breakpoint(480) {
+          font-size: 12px;
+          line-height: 25px;
+        }
+      }
+    }
+    @include breakpoint(1199) {
+      padding-top: 50px;
+    }
+    @include breakpoint(480) {
+      padding: 20px 0;
+      .title-block {
+        margin-bottom: 20px;
       }
     }
   }

@@ -10,6 +10,14 @@
   @include align-items(center);
   @include justify-content(space-between);
   padding: 22px 0;
+  @include breakpoint(991) {
+    padding-top: 0;
+    @include flex-direction(column-reverse);
+  }
+  @include breakpoint(480) {
+    padding-top: 20px;
+    @include align-items(flex-start);
+  }
   .footer-content-left {
     color: #fff;
     font-size: 13px;
@@ -21,6 +29,20 @@
     @include flexbox();
     @include align-items(center);
     @include justify-content(space-between);
+    @include breakpoint(600) {
+      @include flex-direction(column);
+    }
+    @include breakpoint(480) {
+      padding-top: 0;
+      @include align-items(flex-start);
+      .bottom-social-list {
+        padding-left: 0;
+        padding-bottom: 10px;
+      }
+      .top-nav-menu {
+        margin-bottom: 5px;
+      }
+    }
   }
   .top-nav-menu {
     list-style: none;
@@ -37,6 +59,13 @@
   .top-nav-menu-item {
     padding: 20px;
     display: inline-block;
+    @include breakpoint(991) {
+      padding: 20px 10px;
+    }
+    @include breakpoint(480) {
+      padding: 5px 10px;
+      display: block;
+    }
     .item-link {
       font-size: 12px;
       color: #fff;

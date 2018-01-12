@@ -21,3 +21,8 @@ $(window).resize(function() {
   console.log(FH);
   $('.main-container').css({"min-height": 'calc(100vh - '+ FH + 'px)'});
 })
+
+$(window).on('load', function() {
+  $("html, body").removeClass('loading');
+  $(".loader").addClass('loaded');
+});

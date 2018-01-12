@@ -19,6 +19,80 @@
 <meta property="og:type" content="">
 <meta property="og:url" content="" />
 <!-- Google Font -->
+
+<style type="text/css">
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    background-color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+  }
+  .loader:after {
+    content: '';
+    background-image: url(../images/partial/button-loader.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 135px;
+    height: 30px;
+    margin-left: 7px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+  }
+  .loader:before {
+    content: '';
+    background-image: url(../images/partial/logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 110px;
+    height: 110px;
+    margin-bottom: 10px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+  }
+  .loader.loaded:before,
+  .loader.loaded:after,
+  .loader.loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+</style>
   <!-- include styles.html -->
   <!-- build:css(.) style/vendor.min.css -->
 <!-- endbuild -->
@@ -27,7 +101,8 @@
 <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
 <!-- endbuild -->
 </head>
-<body>
+<body class="loading">
+  <div class="loader"></div>
   <div class="wrapper">
     <!-- include header.html -->
     <header class="header-container">
@@ -46,12 +121,12 @@
           </div>
           <div class="header-content-bottom">
             <div class="header-content-left">
-              <h1 class="logo"><a href="#" class="logo-link"><img src="images/partial/logo.png"></a></h1>
+              <h1 class="logo"><a href="/index.html" class="logo-link"><img src="images/partial/logo.png"></a></h1>
               <ul class="top-nav-menu">
                 <li class="top-nav-menu-item"><a href="" class="item-link">Người dùng</a></li>
                 <li class="top-nav-menu-item"><a href="" class="item-link">Doanh nghiệp</a></li>
                 <li class="top-nav-menu-item"><a href="" class="item-link">FAQ</a></li>
-                <li class="top-nav-menu-item"><a href="" class="item-link">Về chúng tôi</a></li>
+                <li class="top-nav-menu-item"><a href="/about-us.html" class="item-link">Về chúng tôi</a></li>
                 <li class="top-nav-menu-item"><a href="" class="item-link">Block</a></li>
               </ul>
             </div>
@@ -69,12 +144,12 @@
     <section class="main-container about-us">
       <div id="a" class="block-container">
         <div class="container-fluid">
-          <div class="row">
+          <div class="row wow fadeInDown">
             <div class="background-header" style="background-image: url('../images/about-us/Background_Header.png')"></div>
           </div>
           <div class="row">
             <div class="center">
-              <div class="description-block">
+              <div class="description-block wow fadeInUp">
                 <div class="content-left">
                   <h2 class="title-block">Từ đam mê,<br>Từ khao khát</h2>
                   <div class="wrap-img">
@@ -88,7 +163,7 @@
               </div>
 
               <div class="vision-block row">
-                <div class="col-md-6 mb10">
+                <div class="col-md-6 mb10 wow fadeInLeft">
                   <h2 class="title-block">Tầm nhìn</h2>
                   <div class="item-visions">
                     <div class="wrap-img">
@@ -109,7 +184,7 @@
                     <p class="item-desc">Đáp ứng kịp thời những mong muốn ẩn sâu bên trong của khách hàng (customer’s insight) là thách thức của mọi doanh nghiệp.</p>
                   </div>
                 </div>
-                <div class="col-md-6 mb10">
+                <div class="col-md-6 mb10 wow fadeInRight">
                   <h2 class="title-block">Sứ mệnh</h2>
                   <div class="item-visions">
                     <div class="wrap-img">
@@ -132,10 +207,10 @@
                 </div>
               </div>
 
-              <div class="patner-block">
+              <div class="patner-block wow fadeInDown">
                 <h2 class="title-block">Đội ngũ nhóm phát triển</h2>
                 <div class="wrap-patner">
-                  <div class="item-patner">
+                  <div class="item-patner wow fadeInDown">
                     <div class="wrap-img">
                       <img src="../images/about-us/Smith.png" class="img-responsive">
                     </div>
@@ -143,7 +218,7 @@
                     <p class="patner-job">Founder</p>
                   </div>
 
-                  <div class="item-patner">
+                  <div class="item-patner wow fadeInDown">
                     <div class="wrap-img">
                       <img src="../images/about-us/Lana.png" class="img-responsive">
                     </div>
@@ -151,7 +226,7 @@
                     <p class="patner-job">Founder</p>
                   </div>
 
-                  <div class="item-patner">
+                  <div class="item-patner wow fadeInDown">
                     <div class="wrap-img">
                       <img src="../images/about-us/Oliver.png" class="img-responsive">
                     </div>

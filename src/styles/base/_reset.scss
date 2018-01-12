@@ -18,6 +18,9 @@ html, body {
   &.active {
     overflow: hidden;
   }
+  &.loading {
+    overflow: hidden;
+  }
 }
 
 .center {

@@ -8,7 +8,8 @@
   <!-- include styles.html -->
   @@include('../layouts/styles.html')
 </head>
-<body>
+<body class="loading">
+  <div class="loader"></div>
   <div class="wrapper">
     <!-- include header.html -->
     @@include('../layouts/header.html')
@@ -16,12 +17,12 @@
     <section class="main-container about-us">
       <div id="a" class="block-container">
         <div class="container-fluid">
-          <div class="row">
+          <div class="row wow fadeInDown">
             <div class="background-header" style="background-image: url('../images/about-us/Background_Header.png')"></div>
           </div>
           <div class="row">
             <div class="center">
-              <div class="description-block">
+              <div class="description-block wow fadeInUp">
                 <div class="content-left">
                   <h2 class="title-block">Từ đam mê,<br>Từ khao khát</h2>
                   <div class="wrap-img">
@@ -35,7 +36,7 @@
               </div>
 
               <div class="vision-block row">
-                <div class="col-md-6 mb10">
+                <div class="col-md-6 mb10 wow fadeInLeft">
                   <h2 class="title-block">Tầm nhìn</h2>
                   <div class="item-visions">
                     <div class="wrap-img">
@@ -56,7 +57,7 @@
                     <p class="item-desc">Đáp ứng kịp thời những mong muốn ẩn sâu bên trong của khách hàng (customer’s insight) là thách thức của mọi doanh nghiệp.</p>
                   </div>
                 </div>
-                <div class="col-md-6 mb10">
+                <div class="col-md-6 mb10 wow fadeInRight">
                   <h2 class="title-block">Sứ mệnh</h2>
                   <div class="item-visions">
                     <div class="wrap-img">
@@ -79,10 +80,10 @@
                 </div>
               </div>
 
-              <div class="patner-block">
+              <div class="patner-block wow fadeInDown">
                 <h2 class="title-block">Đội ngũ nhóm phát triển</h2>
                 <div class="wrap-patner">
-                  <div class="item-patner">
+                  <div class="item-patner wow fadeInDown">
                     <div class="wrap-img">
                       <img src="../images/about-us/Smith.png" class="img-responsive">
                     </div>
@@ -90,7 +91,7 @@
                     <p class="patner-job">Founder</p>
                   </div>
 
-                  <div class="item-patner">
+                  <div class="item-patner wow fadeInDown">
                     <div class="wrap-img">
                       <img src="../images/about-us/Lana.png" class="img-responsive">
                     </div>
@@ -98,7 +99,7 @@
                     <p class="patner-job">Founder</p>
                   </div>
 
-                  <div class="item-patner">
+                  <div class="item-patner wow fadeInDown">
                     <div class="wrap-img">
                       <img src="../images/about-us/Oliver.png" class="img-responsive">
                     </div>

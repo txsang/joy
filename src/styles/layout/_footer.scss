@@ -1,11 +1,15 @@
 .footer-container {
-  background-color: #fc4e43;
+  background-image: -webkit-linear-gradient(-180deg, #ED2839 12%, #E74852 68%, #FF4E40 100%);
+  background-image: -moz-linear-gradient(-180deg, #ED2839 12%, #E74852 68%, #FF4E40 100%);
+  background-image: -ms-linear-gradient(-180deg, #ED2839 12%, #E74852 68%, #FF4E40 100%);
+  background-image: -o-linear-gradient(-180deg, #ED2839 12%, #E74852 68%, #FF4E40 100%);
+  background-image: linear-gradient(-180deg, #ED2839 12%, #E74852 68%, #FF4E40 100%);
 }
 .footer-content {
   @include flexbox();
   @include align-items(center);
   @include justify-content(space-between);
-  padding: 15px 0;
+  padding: 22px 0;
   .footer-content-left {
     color: #fff;
     font-size: 13px;
@@ -24,14 +28,20 @@
     margin-left: -10px;
     margin-right: -10px;
   }
+  .copyright-text {
+    font-family: $RR;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+  }
   .top-nav-menu-item {
-    padding: 10px;
+    padding: 20px;
     display: inline-block;
     .item-link {
-      font-size: 13px;
+      font-size: 12px;
       color: #fff;
+      font-family: $RR;
       text-transform: uppercase;
-      text-shadow: 1px 0 5px rgba(0,0,0,.5)
     }
   }
   .bottom-social-list {
@@ -54,8 +64,8 @@
 
 .logo-footer {
   margin-right: 10px;
-  height: 50px;
-  width: 50px;
+  height: 57px;
+  width: 57px;
   .logo-link {
     display: inline-block;
   }

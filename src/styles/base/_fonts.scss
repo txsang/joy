@@ -56,11 +56,11 @@
 
 @font-face {
   font-family: 'joy';
-  src:  url('../fonts/joy.eot?74nfuw');
-  src:  url('../fonts/joy.eot?74nfuw#iefix') format('embedded-opentype'),
-    url('../fonts/joy.ttf?74nfuw') format('truetype'),
-    url('../fonts/joy.woff?74nfuw') format('woff'),
-    url('../fonts/joy.svg?74nfuw#joy') format('svg');
+  src:  url('../fonts/joy.eot?9tmwh8');
+  src:  url('../fonts/joy.eot?9tmwh8#iefix') format('embedded-opentype'),
+    url('../fonts/joy.ttf?9tmwh8') format('truetype'),
+    url('../fonts/joy.woff?9tmwh8') format('woff'),
+    url('../fonts/joy.svg?9tmwh8#joy') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -91,4 +91,7 @@
 }
 .j-youtube:before {
   content: "\e903";
+}
+.j-messenger:before {
+  content: "\e904";
 }

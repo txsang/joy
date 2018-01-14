@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 29</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="41" cy="41" r="41"></circle>
+        <filter x="-44.5%" y="-45.7%" width="189.0%" height="189.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.905882353   0 0 0 0 0.925490196   0 0 0 0 0.937254902  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FFA7E7" offset="0%"></stop>
+            <stop stop-color="#EA6362" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01.Nguoi_Dung" transform="translate(-178.000000, -1127.000000)">
+            <g id="Group-29" transform="translate(201.000000, 1151.000000)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M55,35.8122066 L55,50.8497653 L52.4366197,50.8497653 L52.4366197,55 L51.0581514,55 L46.9079167,50.8497653 L35.8122066,50.8497653 L35.8122066,43.0375587 L28,43.0375587 L28,28 L47.1877934,28 L47.1877934,35.8122066 L55,35.8122066 Z M51.4366197,49.8497653 L54,49.8497653 L54,36.8122066 L46.1877934,36.8122066 L46.1877934,29 L29,29 L29,42.0375587 L36.8122066,42.0375587 L36.8122066,49.8497653 L47.3221303,49.8497653 L51.4366197,53.9642547 L51.4366197,49.8497653 Z M51.4366197,54.5 L51.9366197,54 L51.2652582,54 L51.6188116,54.1464466 L51.4366197,53.9642547 L51.4366197,54.5 Z M35.8122066,41 L35.8122066,35.8122066 L45.1502347,35.8122066 L45.1502347,30.0375587 L30.0375587,30.0375587 L30.0375587,41 L35.8122066,41 Z M36.8122066,42 L29.0375587,42 L29.0375587,29.0375587 L46.1502347,29.0375587 L46.1502347,36.8122066 L36.8122066,36.8122066 L36.8122066,42 Z M52.9624413,37.8497653 L37.8497653,37.8497653 L37.8497653,48.8122066 L47.7493603,48.8122066 L50.399061,51.4619073 L50.399061,48.8122066 L52.9624413,48.8122066 L52.9624413,37.8497653 Z M36.8497653,49.8122066 L36.8497653,36.8497653 L53.9624413,36.8497653 L53.9624413,49.8122066 L51.399061,49.8122066 L51.399061,53.8761209 L47.3351467,49.8122066 L36.8497653,49.8122066 Z" id="Page-1" fill="url(#linearGradient-3)" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

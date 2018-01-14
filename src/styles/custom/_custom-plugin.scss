@@ -1,0 +1,13 @@
+.main-container {
+  overflow-x: hidden;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #ed2839;
+}
+
+::selection {
+    color: #fff;
+    background: #ed2839;
+}

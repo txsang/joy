@@ -4,7 +4,7 @@ wow = new WOW(
     offset:       100
   }
 );
-wow.init();
+
 $(document).ready(function(){
   $('.btn-menu-mobile').click(function() {
     $('.btn-menu-mobile').toggleClass('active');
@@ -25,4 +25,5 @@ $(window).resize(function() {
 $(window).on('load', function() {
   $("html, body").removeClass('loading');
   $(".loader").addClass('loaded');
+  wow.init();
 });

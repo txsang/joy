@@ -6,6 +6,7 @@
   z-index: 111;
 }
 
+
 .header-mobile-content {
   display: none;
   @include breakpoint(767) {
@@ -110,6 +111,49 @@
       display: block;
       text-align: center;
     }
+  }
+  .content-signin,
+  .content-signup {
+    display: none;
+    .title-register {
+      font-family: $SSB;
+      font-size: 14px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+.signin-header {
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .top-nav-menu {
+    display: none !important;
+  }
+  .header-content-right {
+    display: none;
+  }
+  .content-signin {
+    @include flexbox();
+  }
+}
+
+.signup-header {
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .top-nav-menu {
+    display: none !important;
+  }
+  .header-content-right {
+    display: none;
+  }
+  .content-signup {
+    @include flexbox();
   }
 }
 

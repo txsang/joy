@@ -103,9 +103,10 @@
 </head>
 <body class="loading">
   <div class="loader"></div>
+  <p class="scroll-down" style="color: #FFF"><i class="j-arrow-right"></i>cuộn xuống</p>
   <div class="wrapper">
     <!-- include header.html -->
-    <header class="header-container">
+    <header class="header-container @@class">
   <div class="container-fluid">
     <div class="row">
       <div class="container">
@@ -131,8 +132,16 @@
               </ul>
             </div>
             <div class="header-content-right">
-              <a href="#" class="btn-signin">Đăng nhập</a>
-              <a href="#" class="btn-signup waves-light">Đăng ký miễn phí</a>
+              <a href="/signin.html" class="btn-signin">Đăng nhập</a>
+              <a href="/signup.html" class="btn-signup waves-light">Đăng ký miễn phí</a>
+            </div>
+            <div class="header-content-right content-signin">
+              <span class="title-register">Bạn chưa có tài khoản?</span>
+              <a href="/signup.html" class="btn-signup waves-light">Đăng ký miễn phí</a>
+            </div>
+            <div class="header-content-right content-signup">
+              <span class="title-register">Bạn đã có tài khoản?</span>
+              <a href="/signin.html" class="btn-signup waves-light">Đăng nhập</a>
             </div>
           </div>
         </div>

@@ -1,12 +1,14 @@
 .btn-signup {
   display: inline-block;
-  padding: 10px 25px 8px;
+  padding: 10px 0 8px;
   color: #fff;
   font-family: $SSB;
   font-size: 13px;
   border: 1px solid #fff;
   margin-left: 10px;
   border-radius: 4px;
+  width: 165px;
+  text-align: center;
   &:hover,
   &:focus {
     color: #fff;

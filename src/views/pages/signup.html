@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- include head.html -->
+  @@include('../layouts/head.html', {
+    "title": "Kết nối với khách hàng"
+  })
+  <!-- include styles.html -->
+  @@include('../layouts/styles.html')
+</head>
+<body class="loading">
+  <div class="loader"></div>
+  <div class="wrapper">
+    <!-- include header.html -->
+    @@include('../layouts/header.html', {
+    "class": "signup-header"
+  })
+
+    <section class="main-container signin">
+      <div class="wrap-content">
+        <div class="left-content">
+          <form class="custom-form wow fadeInDown">
+            <h2 class="form-title">Đăng ký</h2>
+            <div class="group-input group-error">
+              <input type="text" name="Account" class="input-form" placeholder="Tài khoản">
+              <label for="Account" class="label-content">Lorem ipsum dolor sit amet</label>
+            </div>
+            <div class="group-input group-success">
+              <input type="password" name="Password" class="input-form" placeholder="Mật khẩu">
+              <label for="Password" class="label-content">Lorem ipsum dolor sit amet</label>
+            </div>
+            <div class="group-input group-warning">
+              <input type="password" name="confirmPassword" class="input-form" placeholder="Nhập lại mật khẩu">
+              <label for="confirmPassword" class="label-content">Lorem ipsum dolor sit amet</label>
+            </div>
+            <div class="group-input">
+              <input type="text" name="Name" class="input-form" placeholder="Tên">
+              <label for="Name" class="label-content">Lorem ipsum dolor sit amet</label>
+            </div>
+            <div class="group-input">
+              <input type="email" name="Email" class="input-form" placeholder="Email">
+              <label for="Email" class="label-content">Lorem ipsum dolor sit amet</label>
+            </div>
+            <div class="group-input">
+              <input type="text" name="PhoneNumber" class="input-form" placeholder="Số điện thoại">
+              <label for="PhoneNumber" class="label-content">Lorem ipsum dolor sit amet</label>
+            </div>
+            <div class="group-input">
+              <input type="text" name="Address" class="input-form" placeholder="Địa chỉ">
+              <label for="Address" class="label-content">Lorem ipsum dolor sit amet</label>
+            </div>
+            <button class="btn-submit waves-light" type="submit">Đăng ký</button>
+          </form>
+        </div>
+        <div class="right-content">
+          <div class="wrapper-content">
+            <h2 class="title-content wow fadeInDown">Kết nối với khách hàng của bạn</h2>
+            <p class="desc-content wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam mi odio. Donec feugiat accumsan turpis ut scelerisque. </p>
+          </div>
+          <div class="wrap-image wow fadeInUp">
+            <img src="../images/form/Background.png" class="img-responsive">
+          </div>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+    </section>
+  </div>
+
+  <!-- include scripts.html -->
+  @@include('../layouts/scripts.html')
+</body>
+</html>

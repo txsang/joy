@@ -11,6 +11,12 @@
     @include breakpoint(991) {
       height: 350px;
     }
+    @include breakpoint(768) {
+      background-position: -30px center;
+    }
+    @include breakpoint(480) {
+      height: 250px;
+    }
   }
   .title-block {
     font-family: $SSB;
@@ -69,16 +75,13 @@
         width: 40%;
         padding-right: 30px;
         margin-bottom: 10px;
-        .title-block br {
-          display: none
-        }
       }
       .content-right {
         width: 60%;
       }
     }
-    @include breakpoint(480) {
-      padding-top: 20px;
+    @include breakpoint(700) {
+      padding-top: 40px;
       .content-left {
         width: 100%;
         padding-right: 0px;
@@ -89,6 +92,9 @@
       .content-right {
         width: 100%;
       }
+    }
+    @include breakpoint(480) {
+      padding-top: 20px;
     }
 
   }
@@ -158,12 +164,11 @@
       float: left;
       padding: 0 13px;
       @include breakpoint(480) {
-        width: 50%;
-        margin-bottom: 10px;
-      }
-      @include breakpoint(370) {
         width: 100%;
         margin-bottom: 10px;
+        img {
+          width: 100%;
+        }
       }
       .wrap-img {
         margin-bottom: 15px;
@@ -175,10 +180,6 @@
         color: #3E3E3E;
         letter-spacing: 0;
         line-height: 43px;
-        @include breakpoint(480) {
-          font-size: 18px;
-          line-height: 25px;
-        }
       }
       .patner-job {
         text-align: center;
@@ -187,10 +188,6 @@
         color: #949AA0;
         letter-spacing: 0;
         line-height: 25px;
-        @include breakpoint(480) {
-          font-size: 12px;
-          line-height: 25px;
-        }
       }
     }
     @include breakpoint(1199) {

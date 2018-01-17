@@ -14,9 +14,19 @@
     padding-top: 0;
     @include flex-direction(column-reverse);
   }
-  @include breakpoint(480) {
+  @include breakpoint(767) {
     padding-top: 20px;
-    @include align-items(flex-start);
+    @include flex-direction(column);
+    .logo-footer {
+      margin-bottom: 20px;
+    }
+    .top-nav-menu {
+      display: none !important;
+    }
+    .bottom-social-list {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
   }
   .footer-content-left {
     color: #fff;
@@ -24,6 +34,10 @@
     @include flexbox();
     @include align-items(center);
     @include justify-content(space-between);
+    @include breakpoint(767) {
+      @include flex-direction(column);
+      margin-bottom: 15px;
+    }
   }
   .footer-content-right {
     @include flexbox();

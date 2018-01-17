@@ -6,11 +6,54 @@
   z-index: 111;
 }
 
+.background-header-mobile {
+  position: absolute;
+  background-color: #E93D49;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  z-index: 0;
+  opacity: 0;
+}
 
 .header-mobile-content {
   display: none;
+  .wrap-content {
+    position: relative;
+    z-index: 1;
+  }
+  .logo {
+    display: inline-block;
+  }
+  .top-nav-menu {
+    margin-left: -10px;
+    list-style: none;
+    display: inline-block;
+  }
+  .top-nav-menu-item {
+    padding: 0 20px;
+    display: inline-block;
+    @include breakpoint(991) {
+      padding: 0 5px;
+    }
+    .item-link {
+      font-family: $SSB;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.7);
+      @include breakpoint(350) {
+        font-size: 12px;
+      }
+    }
+  }
   @include breakpoint(767) {
-    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    padding: 10px 15px;
+    height: 70px;
     @include flexbox();
     @include align-items(center);
     @include justify-content(space-between);
@@ -54,15 +97,8 @@
     @include flexbox();
     @include align-items(center);
     @include justify-content(space-between);
-    @include breakpoint(991) {
-      .btn-signin {
-        padding: 7px 5px 5px;
-        font-size: 12px;
-      }
-      .btn-signup {
-        padding: 7px 8px 5px;
-        font-size: 12px;
-      }
+    @include breakpoint(767) {
+      margin-bottom: 15px;
     }
   }
   .top-nav-menu {
@@ -82,34 +118,90 @@
       color: rgba(255, 255, 255, 0.7);
     }
   }
+  @include breakpoint(991) {
+    .btn-signin {
+      padding: 10px 0px 8px;
+      position: relative;
+      top: 1px;
+    }
+    .btn-signup {
+      width: 130px;
+    }
+  }
   @include breakpoint(767) {
     opacity: 0;
     visibility: hidden;
     position: fixed;
-    top: 70px;
+    top: 0;
     left: 0;
     bottom: 0;
     width: 100%;
     padding: 0 15px;
-    @include transform(scale(0.9));
+    background: transparent;
     @include transition(all .3s);
+    @include flexbox();
+    @include flex-direction(column-reverse);
+    @include justify-content(center);
+    @include align-items(center);
+    .btn-signin {
+      color: #fff !important;
+    }
+    .btn-menu-mobile {
+      position: absolute;
+      top: 18px;
+      right: 15px;
+    }
+    .top-nav-menu,
+    .header-content-top,
+    .header-content-right {
+      @include transition(all .3s);
+      @include transform(scale(0.9));
+    }
     &.active {
       opacity: 1;
       visibility: visible;
-      @include transform(scale(1));
+      background-image: -webkit-linear-gradient(41deg, #E93D49 0%, #E74852 63%, #FF4E40 100%);
+      background-image: -moz-linear-gradient(41deg, #E93D49 0%, #E74852 63%, #FF4E40 100%);
+      background-image: -o-linear-gradient(41deg, #E93D49 0%, #E74852 63%, #FF4E40 100%);
+      background-image: linear-gradient(41deg, #E93D49 0%, #E74852 63%, #FF4E40 100%);
+      .top-nav-menu,
+      .header-content-top,
+      .header-content-right {
+        @include transform(scale(1));
+      }
     }
     .logo {
-      display: none;
+      position: absolute;
+      top: 10px;
+      left: 15px;
     }
     .header-content-bottom {
       @include flex-direction(column);
     }
     .top-nav-menu {
-      margin-bottom: 15px;
+      margin-bottom: 0;
     }
     .top-nav-menu-item {
       display: block;
       text-align: center;
+      .item-link {
+        font-family: $SSB;
+        font-size: 17px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        margin-bottom: 15px;
+        display: block;
+      }
+    }
+  }
+  @include breakpoint(480) {
+    .top-nav-menu {
+      margin-bottom: 0;
+    }
+    .top-nav-menu-item {
+      .item-link {
+        margin-bottom: 35px;
+      }
     }
   }
   .content-signin,
@@ -180,16 +272,21 @@
 
 .btn-menu-mobile {
   width: 30px;
-  height: 29px;
+  height: 30px;
   position: relative;
-  display: block;
+  top: -2px;
+  z-index: 99999;
+  display: none;
   background-color: transparent;
-  border: 1px solid #fff;
-  border-radius: 4px;
+  border: none;
+  outline: none;
+  @include breakpoint(767) {
+    display: block;
+  }
   &:before {
     content: '';
     width: 20px;
-    height: 1px;
+    height: 2px;
     position: absolute;
     top: 7px;
     left: 4px;
@@ -199,7 +296,7 @@
   &:after {
     content: '';
     width: 20px;
-    height: 1px;
+    height: 2px;
     position: absolute;
     bottom: 7px;
     left: 4px;
@@ -209,20 +306,24 @@
   .content-btn {
     content: '';
     width: 20px;
-    height: 1px;
+    height: 2px;
     position: absolute;
-    bottom: 13px;
+    bottom: 14px;
     left: 4px;
     background-color: #fff;
     @include transition(all .3s);
   }
   &.active {
     &:before {
-      top: 13px;
+      top: 14px;
+      left: 2px;
+      width: 23px;
       @include transform(rotate(45deg))
     }
     &:after {
-      bottom: 13px;
+      bottom: 14px;
+      left: 2px;
+      width: 23px;
       @include transform(rotate(-45deg))
 
     }

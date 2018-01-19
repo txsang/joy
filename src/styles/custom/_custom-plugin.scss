@@ -33,6 +33,12 @@
     position: relative;
     top: 1px;
   }
+  @include breakpoint(1300) {
+    right: 30px;
+  }
+  @include breakpoint(991) {
+    display: none;
+  }
 }
 
 @keyframes bounce-custom {

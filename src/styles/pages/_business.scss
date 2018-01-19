@@ -13,6 +13,15 @@
       background-repeat: no-repeat;
       background-position: center top;
       background-size: 100% 100%;
+      @include breakpoint(991) {
+        height: 682px;
+      }
+      @include breakpoint(767) {
+        height: 482px;
+      }
+      @include breakpoint(480) {
+        height: 348px;
+      }
     }
   }
 }
@@ -22,6 +31,16 @@
   z-index: 2;
   .top-banner {
     padding-top: 130px;
+    @include breakpoint(767) {
+      padding-left: 15px;
+      padding-right: 15px;
+      .wrap-button {
+        display: none;
+      }
+    }
+    @include breakpoint(480) {
+      padding-top: 90px;
+    }
     .title-content {
       font-family: $SSB;
       font-size: 37px;
@@ -29,6 +48,10 @@
       letter-spacing: 0;
       margin-bottom: 15px;
       text-align: center;
+      @include breakpoint(767) {
+        font-size: 21px;
+        line-height: 29px;
+      }
     }
     .desc-content {
       font-family: $RR;
@@ -38,7 +61,13 @@
       line-height: 24px;
       text-align: center;
       width: 530px;
+      max-width: 100%;
       margin: 0 auto 30px;
+      @include breakpoint(767) {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 24px;
+      }
     }
     .wrap-button {
       text-align: center;
@@ -58,6 +87,13 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 100% 100%;
+    @include breakpoint(1100) {
+      height: 420px;
+    }
+    @include breakpoint(767) {
+      height: 320px;
+      padding: 50px 15px 0;
+    }
     .title-block {
       font-family: $SSB;
       font-size: 37px;
@@ -65,6 +101,9 @@
       letter-spacing: 0;
       text-align: center;
       margin-bottom: 13px;
+      @include breakpoint(767) {
+        font-size: 21px;
+      }
     }
     .desc-content {
       font-family: $RR;
@@ -73,8 +112,12 @@
       letter-spacing: 0;
       line-height: 25px;
       width: 546px;
+      max-width: 100%;
       margin-bottom: 43px;
       text-align: center;
+      @include breakpoint(767) {
+        font-size: 14px;
+      }
     }
   }
 }
@@ -88,10 +131,18 @@
     line-height: 33px;
     margin-bottom: 10px;
     text-align: center;
+    @include breakpoint(767) {
+      font-size: 18px;
+      line-height: 33px;
+    }
   }
   .content-left {
     width: 40%;
     float: left;
+    @include breakpoint(767) {
+      width: 100%;
+      padding: 0 15px;
+    }
     .title-content-black {
       padding-top: 40px;
       font-family: $SSB;
@@ -107,13 +158,29 @@
       letter-spacing: 0;
       line-height: 22px;
       width: 420px;
+      max-width: 100%;
       padding-bottom: 20px;
+      @include breakpoint(767) {
+        width: 100%;
+      }
+    }
+    .wrap-image {
+      @include breakpoint(767) {
+        width: 80%;
+        margin: 0 auto;
+      }
     }
   }
   .content-right {
     width: 60%;
     float: left;
     padding-left: 20px;
+    @include breakpoint(767) {
+      width: 100%;
+      padding: 0 15px;
+      @include flexbox();
+      @include flex-direction(column-reverse);
+    }
     .title-content-red {
       font-family: $SSB;
       font-size: 19px;
@@ -122,6 +189,9 @@
       line-height: 43px;
       padding-top: 40px;
       padding-left: 60px;
+      @include breakpoint(767) {
+        padding-left: 0;
+      }
     }
     .desc-content {
       font-family: $RR;
@@ -131,6 +201,17 @@
       line-height: 22px;
       padding-left: 60px;
       width: 420px;
+      @include breakpoint(767) {
+        padding-left: 0;
+        width: 100%;
+      }
+    }
+    .wrap-image {
+      @include breakpoint(767) {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 20px;
+      }
     }
   }
 }
@@ -140,13 +221,41 @@
   @include justify-content(center);
   @include align-items(center);
   width: 100%;
+  @include breakpoint(920) {
+    @include flex-direction(column);
+  }
   .content-left {
     width: 60%;
     min-width: 60%;
+    @include breakpoint(1100) {
+      min-width: 50%;
+      width: 50%;
+    }
+    @include breakpoint(920) {
+      min-width: 80%;
+      width: 80%;
+      margin-right: 20%;
+    }
+    @include breakpoint(768) {
+      width: 100%;
+      margin-right: 0;
+    }
   }
   .content-right {
     width: 40%;
     min-width: 40%;
+    @include breakpoint(1100) {
+      min-width: 50%;
+      width: 50%;
+    }
+    @include breakpoint(920) {
+      min-width: 70%;
+      width: 70%;
+    }
+    @include breakpoint(767) {
+      width: 100%;
+      padding: 0 15px;
+    }
   }
   .red-title {
     font-family: $SSB;
@@ -154,6 +263,9 @@
     color: #EF404F;
     letter-spacing: 1.05px;
     margin-bottom: 10px;
+    @include breakpoint(767) {
+      text-transform: uppercase;
+    }
   }
   .black-title {
     font-family: $SSB;
@@ -162,6 +274,9 @@
     letter-spacing: 0;
     line-height: 43px;
     margin-bottom: 15px;
+    @include breakpoint(767) {
+      font-size: 24px;
+    }
   }
   .desc-content {
     font-family: $RR;
@@ -171,6 +286,10 @@
     line-height: 25px;
     margin-bottom: 18px;
     width: 420px;
+    max-width: 100%;
+    @include breakpoint(920) {
+      width: 100%;
+    }
   }
   .check-list {
     list-style: none;
@@ -186,6 +305,9 @@
     @include justify-content(flex-start);
     @include align-items(center);
     margin-bottom: 10px;
+    @include breakpoint(767) {
+      font-size: 13px;
+    }
   }
   .j-check {
     position: relative;
@@ -212,9 +334,7 @@
       box-shadow: 0 2px 4px 0 rgba(0,0,0,0.14);
       display: block;
       border-radius: 100px;
-
     }
-
   }
 }
 
@@ -223,19 +343,50 @@
   @include justify-content(center);
   @include align-items(center);
   width: 100%;
+  @include breakpoint(920) {
+    @include flex-direction(column-reverse);
+  }
   .content-left {
     width: 40%;
     min-width: 40%;
     text-align: right;
+    @include breakpoint(1100) {
+      min-width: 50%;
+      width: 50%;
+    }
+    @include breakpoint(920) {
+      min-width: 70%;
+      width: 70%;
+    }
+    @include breakpoint(768) {
+      width: 100%;
+      padding: 0 15px;
+    }
   }
   .wrap-content {
     text-align: left;
     width: 420px;
     margin: 0 0 0 auto;
+    @include breakpoint(920) {
+      width: 100%;
+    }
   }
   .content-right {
     width: 60%;
     min-width: 60%;
+    @include breakpoint(1100) {
+      min-width: 50%;
+      width: 50%;
+    }
+    @include breakpoint(920) {
+      min-width: 80%;
+      width: 80%;
+      margin-left: 20%;
+    }
+    @include breakpoint(768) {
+      width: 100%;
+      margin-left: 0;
+    }
   }
   .red-title {
     font-family: $SSB;
@@ -243,6 +394,9 @@
     color: #EF404F;
     letter-spacing: 1.05px;
     margin-bottom: 10px;
+    @include breakpoint(767) {
+      text-transform: uppercase;
+    }
   }
   .black-title {
     font-family: $SSB;
@@ -251,6 +405,9 @@
     letter-spacing: 0;
     line-height: 43px;
     margin-bottom: 15px;
+    @include breakpoint(767) {
+      font-size: 24px;
+    }
   }
   .desc-content {
     font-family: $RR;
@@ -260,6 +417,10 @@
     line-height: 25px;
     margin-bottom: 18px;
     width: 420px;
+    max-width: 100%;
+    @include breakpoint(920) {
+      width: 100%;
+    }
   }
   .check-list {
     list-style: none;
@@ -275,6 +436,9 @@
     @include justify-content(flex-start);
     @include align-items(center);
     margin-bottom: 10px;
+    @include breakpoint(767) {
+      font-size: 13px;
+    }
   }
   .j-check {
     position: relative;
@@ -313,6 +477,11 @@
     letter-spacing: 0;
     line-height: 63px;
     text-align: center;
+    @include breakpoint(767) {
+      font-size: 21px;
+      line-height: 29px;
+      padding: 15px;
+    }
   }
   .red-content {
     color: #EF404F;
@@ -322,6 +491,10 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 1920px 490px;
+    @include breakpoint(767) {
+      background-size: 1100px 275px;
+      height: 300px;
+    }
     .container {
       position: relative;
     }
@@ -336,6 +509,9 @@
   opacity: 0;
   visibility: hidden;
   @include transition( all .5s);
+  @include breakpoint(767) {
+    display: none !important;
+  }
   .title-tooltip {
     font-family: $SSB;
     font-size: 25px;
@@ -425,6 +601,19 @@
   width: 150px;
   height: 150px;
   border-radius: 100%;
+  @include breakpoint(1199) {
+    top: 140px;
+    left: 450px;
+  }
+  @include breakpoint(991) {
+    left: 350px;
+  }
+  @include breakpoint(767) {
+    width: 90px;
+    height: 90px;
+    top: 85px;
+    left: 48%;
+  }
 }
 
 .image-2 {
@@ -434,6 +623,22 @@
   width: 130px;
   height: 130px;
   border-radius: 100%;
+  @include breakpoint(1199) {
+    top: 70px;
+    left: 200px;
+  }
+  @include breakpoint(991) {
+    left: 100px;
+  }
+  @include breakpoint(767) {
+    width: 80px;
+    height: 80px;
+    left: 25%;
+    top: 30px;
+  }
+  @include breakpoint(560) {
+    left: 10%;
+  }
 }
 
 .image-3 {
@@ -443,6 +648,16 @@
   width: 80px;
   height: 80px;
   border-radius: 100%;
+  @include breakpoint(1199) {
+    top: 390px;
+    left: 220px;
+  }
+  @include breakpoint(991) {
+    left: 120px;
+  }
+  @include breakpoint(767) {
+    display: none;
+  }
 }
 
 .image-4 {
@@ -452,4 +667,20 @@
   width: 90px;
   height: 90px;
   border-radius: 100%;
+  @include breakpoint(1199) {
+    top: 160px;
+    right: 120px;
+  }
+  @include breakpoint(991) {
+    right: 20px;
+  }
+  @include breakpoint(767) {
+    width: 60px;
+    height: 60px;
+    top: 100px;
+    right: 18%;
+  }
+  @include breakpoint(650) {
+    display: none;
+  }
 }

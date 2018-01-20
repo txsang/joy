@@ -8,6 +8,16 @@
     bottom: 0;
     width: 100%;
     overflow: hidden;
+    @include breakpoint(991) {
+      overflow: auto;
+      padding-top: 140px;
+      position: relative;
+    }
+    @include breakpoint(767) {
+      overflow: auto;
+      padding-top: 106px;
+      position: relative;
+    }
   }
   .left-content {
     min-width: 40%;
@@ -15,6 +25,14 @@
     @include flexbox();
     @include align-items(center);
     @include justify-content(center);
+    @include breakpoint(991) {
+      min-width: 100%;
+      width: 100%;
+    }
+    @include breakpoint(800) {
+      @include align-items(flex-end);
+      padding-bottom: 55px;
+    }
   }
   .right-content {
     min-width: 60%;
@@ -24,6 +42,9 @@
     @include justify-content(center);
     background-color: #6b7486;
     position: relative;
+    @include breakpoint(991) {
+      display: none;
+    }
     .title-content {
       font-family: $SSB;
       font-size: 37px;

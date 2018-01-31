@@ -15,7 +15,7 @@
     }
     @include breakpoint(991) {
       background-size: 1920px 80%;
-      height: 550px;
+      height: 650px;
     }
     @include breakpoint(767) {
       background-size: 1920px 80%;
@@ -112,6 +112,7 @@
       margin-bottom: 20px;
       @include breakpoint(1199) {
         font-size: 40px;
+        line-height: 50px;
       }
       @include breakpoint(991) {
         font-size: 36px;

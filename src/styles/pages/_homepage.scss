@@ -1,3 +1,168 @@
+.index {
+  position: relative;
+  .main-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: -webkit-linear-gradient(-180deg, #FF4E40 5%, #E74852 48%, #ED2839 100%);
+    background-image: -moz-linear-gradient(-180deg, #FF4E40 5%, #E74852 48%, #ED2839 100%);
+    background-image: linear-gradient(-180deg, #FF4E40 5%, #E74852 48%, #ED2839 100%);
+    padding: 100px 0 15px;
+    overflow: hidden;
+    @include flexbox();
+    @include breakpoint(991) {
+      @include flex-direction(column);
+      padding: 100px 15px 15px;
+      overflow: visible;
+      position: relative;
+    }
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+  &.en {
+    .home-content-left {
+      @include breakpoint(1520) {
+        .title-content {
+          line-height: 45px;
+        }
+      }
+    }
+  }
+  .home-content-left {
+    width: 50%;
+    float: left;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 30px;
+      bottom: 0;
+      width: 1px;
+      background-color: rgba(255,255,255,.26);
+    }
+    @include breakpoint(991) {
+      width: 100%;
+      margin-bottom: 20px;
+      &:after {
+        right: auto;
+        top: auto;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255,255,255,.26);
+      }
+      .title-content {
+        padding-top: 20px;
+      }
+    }
+    .wrap-img {
+      left: 0;
+    }
+  }
+  .title-content {
+    font-family: $SSB;
+    font-size: 35px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 79px;
+    padding: 0 15px;
+    text-align: center;
+    @include breakpoint(767) {
+      padding: 0;
+      font-size: 21px;
+      line-height: 29px;
+    }
+  }
+  .description-content {
+    font-family: $RR;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 28px;
+    padding: 0 15px;
+    text-align: center;
+    width: 490px;
+    max-width: 100%;
+    margin: 0 auto 22px;
+    @include breakpoint(767) {
+      padding: 0;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+  .wrap-button {
+    text-align: center;
+    margin-bottom: 25px;
+    a {
+      background: #FFFFFF;
+      border-radius: 120px;
+      font-family: $SSB;
+      font-size: 13px;
+      color: #000000 !important;
+      letter-spacing: 0.5px;
+      width: 226px;
+      padding: 17px 0 12px 0;
+      display: inline-block;
+      text-transform: uppercase;
+      position: relative;
+      text-align: center;
+    }
+  }
+  .wrap-img {
+    position: absolute;
+    top: 259px;
+    width: 100%;
+    bottom: 0;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+    @include breakpoint(991) {
+      position: relative;
+      top: 0;
+      width: 100%;
+      img {
+        position: relative;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        @include transform(none);
+      }
+    }
+  }
+  .home-content-right {
+    width: 50%;
+    float: left;
+    position: relative;
+    .wrap-img {
+      right: 0;
+      @include align-items(flex-end);
+      @include justify-content(flex-end);
+    }
+    @include breakpoint(991) {
+      width: 100%;
+      .wrap-img {
+        margin: 0 -15px;
+        width: auto;
+        @include align-items(center);
+        @include justify-content(center);
+      }
+    }
+  }
+}
+
 .home {
   position: relative;
   .home-container {

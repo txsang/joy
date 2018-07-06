@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="41" cy="41" r="41"></circle>
+        <filter x="-44.5%" y="-45.7%" width="189.0%" height="189.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.905882353   0 0 0 0 0.925490196   0 0 0 0 0.937254902  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="49.9572045%" y1="100.086059%" x2="49.9572045%" y2="0.15869191%" id="linearGradient-3">
+            <stop stop-color="#FCB3A4" offset="0%"></stop>
+            <stop stop-color="#DA5899" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01.Nguoi_Dung" transform="translate(-178.000000, -957.000000)">
+            <g id="Group-3" transform="translate(201.000000, 981.000000)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M40.5,41.8473154 C41.4351285,41.8473154 42.2320981,41.5179019 42.8909376,40.8590584 C43.549781,40.200219 43.8791946,39.4032493 43.8791946,38.4681208 C43.8791946,37.5329923 43.549781,36.7360227 42.8909376,36.0771832 C42.2320981,35.4183398 41.4351285,35.0889262 40.5,35.0889262 C39.5648715,35.0889262 38.7679019,35.4183398 38.1090624,36.0771832 C37.450219,36.7360227 37.1208054,37.5329923 37.1208054,38.4681208 C37.1208054,39.4032493 37.450219,40.200219 38.1090624,40.8590584 C38.7679019,41.5179019 39.5648715,41.8473154 40.5,41.8473154 Z M40.5,28.9681208 C43.1353617,28.9681208 45.3775066,29.8926072 47.226508,31.7416128 C49.0755136,33.5906142 50,35.8327591 50,38.4681208 C50,39.7857996 49.6705864,41.2947332 49.0117429,42.9949664 C48.3529035,44.6951997 47.5559339,46.2891431 46.6208054,47.7768456 C45.6856769,49.2645482 44.7611904,50.6565948 43.8473175,51.9530181 C42.9334404,53.2494471 42.1577222,54.2801977 41.5201342,55.045302 L40.5,56.1291946 C40.2449664,55.831654 39.9049231,55.4384813 39.4798658,54.9496644 C39.0548085,54.4608475 38.289716,53.4832288 37.1845638,52.0167806 C36.0794115,50.5503294 35.1124222,49.1264057 34.283557,47.7449644 C33.4546939,46.3635272 32.7002271,44.8014609 32.0201342,43.0587248 C31.3400413,41.3159887 31,39.7857996 31,38.4681208 C31,35.8327591 31.9244873,33.5906142 33.7734899,31.7416128 C35.6224934,29.8926072 37.8646383,28.9681208 40.5,28.9681208 Z" id="Page-1" fill="url(#linearGradient-3)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

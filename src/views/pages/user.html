@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- include head.html -->
+  @@include('../layouts/head.html', {
+    "title": "Dành cho người dùng"
+  })
+  <!-- include styles.html -->
+  @@include('../layouts/styles.html')
+</head>
+<body class="loading">
+  <div class="loader"></div>
+  <p class="scroll-down"><i class="j-arrow-right"></i>cuộn xuống</p>
+  <div class="wrapper">
+    <!-- include header.html -->
+    @@include('../layouts/header.html', {
+    "link": "user-en.html"
+  })
+
+    <section class="main-container home">
+      <!-- background index -->
+      <div class="background-container">
+        <div class="background-top" style="background-image: url(images/home/background-top.png)"></div>
+        <div class="background-left" style="background-image: url(images/home/background-left.png)"></div>
+        <div class="background-right" style="background-image: url(images/home/background-right.png)"></div>
+        <div class="background-bottom" style="background-image: url(images/home/background-top.png)"></div>
+      </div>
+      <!-- end -->
+      <!-- main content -->
+      <div class="home-container">
+        <!-- block top -->
+        <div class="top-banner" style="background-image: url(images/home/top-banner.png)">
+          <div class="top-banner-content wow fadeInDown">
+            <div class="container">
+              <div class="top-banner-background" style="background-image: url(images/home/top-banner-item.png)"></div>
+              <div class="top-banner-background-mobile">
+                <img src="images/home/top-banner-item-mobile.png" class="img-responsive" alt="">
+              </div>
+            </div>
+            <div class="center">
+              <div class="left-content">
+                <h2 class="title-content">Trợ lý Ảo đột phá</h2>
+                <p class="desc-content">Người trợ lý với lời khuyên ẩm thực chất lừ cho bạn. Inbox ngay Gonjoy trên Facbook Messenger.</p>
+                <a href="#" class="btn-messenger waves-light"><i class="j-messenger"></i>Messenger</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end block top -->
+        <!-- block joy benefit -->
+        <div class="joy-benefit">
+          <div class="center">
+            <p class="small-title wow fadeInDown">NỔI BẬT CỦA JOY</p>
+            <h2 class="big-title wow fadeInDown"><span class="red-content">Joy</span> giúp gì cho bạn?</h2>
+            <!-- list benefit -->
+            <div class="list-benefit">
+              <!-- item benefit -->
+              <div class="benefit-item wow fadeInDown">
+                <div class="wrap-image">
+                  <img src="images/home/Tim_Dung_Dia_Diem.svg" class="img-responsive">
+                </div>
+                <p class="item-name">Tìm đúng địa điểm</p>
+              </div>
+              <!-- end item -->
+              <div class="benefit-item wow fadeInDown">
+                <div class="wrap-image">
+                  <img src="images/home/De_Xuat_Mon_An.svg" class="img-responsive">
+                </div>
+                <p class="item-name">Đề xuất món ăn</p>
+              </div>
+              <div class="benefit-item wow fadeInDown">
+                <div class="wrap-image">
+                  <img src="images/home/Tiet_Kiem_Thoi_GIan.svg" class="img-responsive">
+                </div>
+                <p class="item-name">Tiết kiệm thời gian</p>
+              </div>
+              <div class="benefit-item wow fadeInDown">
+                <div class="wrap-image">
+                  <img src="images/home/Tiet_Kiem_Chi_Phi.svg" class="img-responsive">
+                </div>
+                <p class="item-name">Tiết kiệm chi phí</p>
+              </div>
+              <div class="benefit-item wow fadeInDown">
+                <div class="wrap-image">
+                  <img src="images/home/Tim_Theo_Cam_Xuc.svg" class="img-responsive">
+                </div>
+                <p class="item-name">Tìm theo cảm xúc</p>
+              </div>
+              <div class="benefit-item wow fadeInDown">
+                <div class="wrap-image">
+                  <img src="images/home/Dung_Joy_Gop_Y.svg" class="img-responsive">
+                </div>
+                <p class="item-name">Dùng Joy góp ý</p>
+              </div>
+              <div class="benefit-item wow fadeInDown">
+                <div class="wrap-image">
+                  <img src="images/home/Chia_Se_Ban_Be.svg" class="img-responsive">
+                </div>
+                <p class="item-name">Chia sẻ với bạn bè</p>
+              </div>
+              <div class="benefit-item wow fadeInDown">
+                <div class="wrap-image">
+                  <img src="images/home/Dat_Cho_Nhanh_Chonh.svg" class="img-responsive">
+                </div>
+                <p class="item-name">Đặt chỗ nhanh chóng</p>
+              </div>
+              <div class="benefit-item wow fadeInDown">
+                <div class="wrap-image">
+                  <img src="images/home/Nhan_Khuyen_Mai.svg" class="img-responsive">
+                </div>
+                <p class="item-name">Nhận khuyến mãi</p>
+              </div>
+              <div class="benefit-item wow fadeInDown">
+                <div class="wrap-image">
+                  <img src="images/home/Goi_Mon_Qua_Joy.svg" class="img-responsive">
+                </div>
+                <p class="item-name">Gọi món qua Joy</p>
+              </div>
+            </div>
+            <!-- end list -->
+          </div>
+        </div>
+        <!-- end block benefit -->
+        <!-- block with content in right -->
+        <div class="block-content-right">
+          <div class="center">
+            <div class="left-content wow fadeInLeft">
+              <img src="images/home/block-1.png" class="img-responsive">
+            </div>
+            <div class="right-content wow fadeInRight">
+              <h2 class="title-block">Gợi ý theo sức khoẻ</h2>
+              <p class="desc-content">Nhân viên chăm sóc sức khoẻ cá nhân của bẹn. Joy quan tâm đến sức khoẻ và tâm trạng của bạn. Cung cấp thông tin về ăn uống hỗ trợ sức khoẻ. Hướng đến một cuộc sống khoẻ mạnh.</p>
+              <img src="images/home/block-bottom-1.png" class="img-bottom">
+            </div>
+          </div>
+        </div>
+        <!-- end block -->
+
+        <!-- block with content in left -->
+        <div class="block-content-left">
+          <div class="center">
+            <div class="left-content wow fadeInLeft">
+              <h2 class="title-block">Chơi game góp ý</h2>
+              <p class="desc-content">Góp ý thông qua một trò chơi của Joy. Làm mọi thứ một cách vui vẻ. Tham gia để nhận voucher ngay.</p>
+            </div>
+            <div class="right-content wow fadeInRight">
+              <img src="images/home/block-2.png" class="img-responsive">
+            </div>
+          </div>
+        </div>
+        <!-- end block -->
+        <div class="block-content-right">
+          <div class="center">
+            <div class="left-content wow fadeInLeft">
+              <img src="images/home/block-3.png" class="img-responsive">
+            </div>
+            <div class="right-content wow fadeInRight">
+              <h2 class="title-block">Hệ thống phân tích <br>ngôn ngữ</h2>
+              <p class="desc-content">Kết bạn với Joy. Tương tác thân thiện dựa trên hệ thống phân tích ngôn ngữ. Tối ưu hoá quá trình tìm kiếm của bạn. Thấu hiểu mong muốn của bạn.</p>
+              <img src="images/home/block-bottom-2.png" class="img-bottom">
+            </div>
+          </div>
+        </div>
+
+        <div class="block-content-left">
+          <div class="center">
+            <div class="left-content wow fadeInLeft">
+              <h2 class="title-block">Cá nhân hoá</h2>
+              <p class="desc-content">Đưa ra lời khuyên ăn uống phù hợp với bạn. Cá nhân hoá nhu cầu và sở thích của bạn</p>
+              <img src="images/home/block-bottom-3.png" class="img-bottom">
+            </div>
+            <div class="right-content wow fadeInRight">
+              <img src="images/home/block-4.png" class="img-responsive">
+            </div>
+          </div>
+        </div>
+        <!-- block joy contact -->
+        <div class="block-joy-contact wow fadeInDown">
+          <div class="center">
+            <h2 class="title-block">Hãy để <span class="red-title">Joy</span> phục vụ bạn ngay bây giờ!</h2>
+            <a href="#" class="btn-messenger waves-light"><i class="j-messenger"></i>Messenger</a>
+          </div>
+        </div>
+        <!-- end block -->
+
+        <!-- block content bottom -->
+        <div class="bottom-banner" style="background-image: url(images/home/bottom-banner.png)">
+          <div class="wrap-image wow fadeInLeft">
+            <img class="img-responsive" src="images/home/bottom-banner-item.png">
+          </div>
+          <div class="bottom-banner-content wow fadeInRight">
+            <h2 class="title-content">Joy và Doanh nghiệp</h2>
+            <p class="desc-content">Kết nối khách hàng của bạn 24/7.<br>Hỗ trợ việc kinh doanh của bạn 24/7</p>
+            <a href="#" class="btn-discover waves-light">Khám phá các lợi ích <i class="j-arrow-right"></i></a>
+          </div>
+        </div>
+        <!-- end block -->
+      </div>
+
+      <div class="clearfix"></div>
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+  </div>
+
+  <!-- include scripts.html -->
+  @@include('../layouts/scripts.html')
+</body>
+</html>

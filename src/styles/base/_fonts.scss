@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src:  url('../fonts/Montserrat-Bold.ttf?') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src:  url('../fonts/Montserrat-Regular.ttf?') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src:  url('../fonts/Roboto-Regular.ttf?') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SamsungSharpSans-Bold-UTF8';
+  src:  url('../fonts/SamsungSharpSans-Bold-UTF8.ttf?') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src:  url('../fonts/Montserrat-Light.otf?') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src:  url('../fonts/Montserrat-Medium.otf?') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src:  url('../fonts/Montserrat-SemiBold.otf?') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Thin';
+  src:  url('../fonts/Montserrat-Thin.otf?') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'joy';
+  src:  url('../fonts/joy.eot?9tmwh8');
+  src:  url('../fonts/joy.eot?9tmwh8#iefix') format('embedded-opentype'),
+    url('../fonts/joy.ttf?9tmwh8') format('truetype'),
+    url('../fonts/joy.woff?9tmwh8') format('woff'),
+    url('../fonts/joy.svg?9tmwh8#joy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="j-"], [class*=" j-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'joy' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.j-arrow-right:before {
+  content: "\e900";
+}
+.j-facebook:before {
+  content: "\e901";
+}
+.j-google:before {
+  content: "\e902";
+}
+.j-youtube:before {
+  content: "\e903";
+}
+.j-messenger:before {
+  content: "\e904";
+}

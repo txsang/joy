@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="110px" height="110px" viewBox="0 0 110 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 12</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="35" cy="35" r="35"></circle>
+        <filter x="-43.6%" y="-45.0%" width="187.1%" height="187.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.905882353   0 0 0 0 0.925490196   0 0 0 0 0.937254902  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#FBC79A" offset="0%"></stop>
+            <stop stop-color="#D73E68" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03.Ve_Chung_Toi" transform="translate(-698.000000, -1230.000000)">
+            <g id="Group-12" transform="translate(718.000000, 1251.000000)">
+                <g id="Oval-Copy-3">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <polygon id="Page-1" fill="url(#linearGradient-3)" points="39.061144 30.242236 35.5226824 23 31.938856 30.242236 24 31.426501 29.7613412 37.0289855 28.4003945 45 35.5226824 41.2650104 42.5996055 45 41.2840237 37.0289855 47 31.426501"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

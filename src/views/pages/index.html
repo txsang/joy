@@ -3,31 +3,45 @@
 <head>
   <!-- include head.html -->
   @@include('../layouts/head.html', {
-    "title": "HTML Boilerplate"
+    "title": "Trang chủ"
   })
   <!-- include styles.html -->
   @@include('../layouts/styles.html')
 </head>
-<body>
+<body class="loading">
+  <div class="loader"></div>
   <div class="wrapper">
     <!-- include header.html -->
-    @@include('../layouts/header.html')
+    @@include('../layouts/header.html', {
+    "link": "index-en.html"
+  })
 
-    <!-- include banner.html -->
-    @@include('../partials/banner.html')
+    <section class="main-container index">
 
-    <section class="main-container">
-      <div id="a" class="block-container">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="center">
-              <div class="col-xs-12">
-                <h4 class="title-block">HTML Boilerplate</h4>
-              </div>
-            </div>
+      <!-- main content -->
+      <div class="main-content">
+        <section class="home-content-left">
+          <h2 class="title-content wow fadeInDown">Trợ lý Ảo đột phá</h2>
+          <p class="description-content wow fadeInDown">Người trợ lý với lời khuyên ẩm thực chất lừ cho bạn. Inbox ngay Gonjoy trên Facbook Messenger.</p>
+          <div class="wrap-button wow fadeInDown">
+            <a href="user.html" class="btn-white wave-light">Tìm hiểu ngay</a>
           </div>
-        </div>
+          <div class="wrap-img wow fadeInDown">
+            <img src="images/index/img-1.png">
+          </div>
+        </section>
+        <section class="home-content-right">
+          <h2 class="title-content wow fadeInDown">Joy và Doanh Nghiệp</h2>
+          <p class="description-content wow fadeInDown">Kết nối khách hàng của bạn 24/7.<br>Hỗ trợ việc kinh doanh của bạn 24/7</p>
+          <div class="wrap-button wow fadeInDown">
+            <a href="business.html" class="btn-white wave-light">Tìm hiểu ngay</a>
+          </div>
+          <div class="wrap-img wow fadeInDown">
+            <img src="images/index/img-2.png">
+          </div>
+        </section>
       </div>
+
       <div class="clearfix"></div>
     </section>
 

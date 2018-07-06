@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- include head.html -->
+  @@include('../layouts/head.html', {
+    "title": "Trang chủ"
+  })
+  <!-- include styles.html -->
+  @@include('../layouts/styles.html')
+</head>
+<body class="loading">
+  <div class="loader"></div>
+  <div class="wrapper">
+    <!-- include header.html -->
+    @@include('../layouts/header-en.html', {
+    "link": "index.html"
+  })
+
+    <section class="main-container index en">
+
+      <!-- main content -->
+      <div class="main-content">
+        <section class="home-content-left">
+          <h2 class="title-content wow fadeInDown">Revolutionary Artificial Intelligent Assitant</h2>
+          <p class="description-content wow fadeInDown">Your friendly virtual dining assitant. Find right dining place in the right time. Inbox "Gonjoy" on Facebook Messenger</p>
+          <div class="wrap-button wow fadeInDown">
+            <a href="user-en.html" class="btn-white wave-light">Find out</a>
+          </div>
+          <div class="wrap-img wow fadeInDown">
+            <img src="images/index/img-1.png">
+          </div>
+        </section>
+        <section class="home-content-right">
+          <h2 class="title-content wow fadeInDown">Joy and Business</h2>
+          <p class="description-content wow fadeInDown">Connect your customer 24/7.<br>Support your business 24/7.</p>
+          <div class="wrap-button wow fadeInDown">
+            <a href="business-en.html" class="btn-white wave-light">Find out</a>
+          </div>
+          <div class="wrap-img wow fadeInDown">
+            <img src="images/index/img-2.png">
+          </div>
+        </section>
+      </div>
+
+      <div class="clearfix"></div>
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer-en.html')
+  </div>
+
+  <!-- include scripts.html -->
+  @@include('../layouts/scripts.html')
+</body>
+</html>

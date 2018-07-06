@@ -1,0 +1,688 @@
+.business {
+  position:  relative;
+  .background-container {
+    z-index: 1;
+    .background-business {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: auto;
+      height: 822px;
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 100% 100%;
+      @include breakpoint(991) {
+        height: 682px;
+      }
+      @include breakpoint(767) {
+        height: 482px;
+      }
+      @include breakpoint(480) {
+        height: 348px;
+      }
+    }
+  }
+}
+
+.business-container {
+  position: relative;
+  z-index: 2;
+  .top-banner {
+    padding-top: 130px;
+    @include breakpoint(767) {
+      padding-left: 15px;
+      padding-right: 15px;
+      .wrap-button {
+        display: none;
+      }
+    }
+    @include breakpoint(480) {
+      padding-top: 90px;
+    }
+    .title-content {
+      font-family: $SSB;
+      font-size: 37px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      margin-bottom: 15px;
+      text-align: center;
+      padding: 0 15px;
+      @include breakpoint(767) {
+        padding: 0;
+        font-size: 21px;
+        line-height: 29px;
+      }
+    }
+    .desc-content {
+      font-family: $RR;
+      font-size: 15px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      line-height: 24px;
+      text-align: center;
+      width: 530px;
+      max-width: 100%;
+      margin: 0 auto 30px;
+      @include breakpoint(767) {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 24px;
+      }
+    }
+    .wrap-button {
+      text-align: center;
+      margin-bottom: 50px;
+      .btn-watch-video {
+        margin-right: 10px;
+      }
+    }
+  }
+  .bottom-content {
+    height: 520px;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    @include flex-direction(column);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% 100%;
+    @include breakpoint(1100) {
+      height: 420px;
+    }
+    @include breakpoint(767) {
+      height: 320px;
+      padding: 50px 15px 0;
+    }
+    .title-block {
+      font-family: $SSB;
+      font-size: 37px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      text-align: center;
+      margin-bottom: 13px;
+      @include breakpoint(767) {
+        font-size: 21px;
+      }
+    }
+    .desc-content {
+      font-family: $RR;
+      font-size: 16px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      line-height: 25px;
+      width: 546px;
+      max-width: 100%;
+      margin-bottom: 43px;
+      text-align: center;
+      @include breakpoint(767) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.work-with-joy-block {
+  .title-block {
+    font-family: $RR;
+    font-size: 23px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 33px;
+    margin-bottom: 10px;
+    text-align: center;
+    @include breakpoint(767) {
+      font-size: 18px;
+      line-height: 33px;
+    }
+  }
+  .content-left {
+    width: 40%;
+    float: left;
+    @include breakpoint(767) {
+      width: 100%;
+      padding: 0 15px;
+    }
+    .title-content-black {
+      padding-top: 40px;
+      font-family: $SSB;
+      font-size: 18px;
+      color: #503E40;
+      letter-spacing: 0;
+      line-height: 43px;
+    }
+    .desc-content {
+      font-family: $RR;
+      font-size: 14px;
+      color: #929495;
+      letter-spacing: 0;
+      line-height: 22px;
+      width: 420px;
+      max-width: 100%;
+      padding-bottom: 20px;
+      @include breakpoint(767) {
+        width: 100%;
+      }
+    }
+    .wrap-image {
+      @include breakpoint(767) {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .content-right {
+    width: 60%;
+    float: left;
+    padding-left: 20px;
+    @include breakpoint(767) {
+      width: 100%;
+      padding: 0 15px;
+      @include flexbox();
+      @include flex-direction(column-reverse);
+    }
+    .title-content-red {
+      font-family: $SSB;
+      font-size: 19px;
+      color: #ED2839;
+      letter-spacing: 0;
+      line-height: 43px;
+      padding-top: 40px;
+      padding-left: 60px;
+      @include breakpoint(767) {
+        padding-left: 0;
+      }
+    }
+    .desc-content {
+      font-family: $RR;
+      font-size: 14px;
+      color: #929495;
+      letter-spacing: 0;
+      line-height: 22px;
+      padding-left: 60px;
+      width: 420px;
+      @include breakpoint(767) {
+        padding-left: 0;
+        width: 100%;
+      }
+    }
+    .wrap-image {
+      @include breakpoint(767) {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+.block-content-right-fluid {
+  @include flexbox();
+  @include justify-content(center);
+  @include align-items(center);
+  width: 100%;
+  @include breakpoint(920) {
+    @include flex-direction(column);
+  }
+  .content-left {
+    width: 60%;
+    min-width: 60%;
+    @include breakpoint(1100) {
+      min-width: 50%;
+      width: 50%;
+    }
+    @include breakpoint(920) {
+      min-width: 80%;
+      width: 80%;
+      margin-right: 20%;
+    }
+    @include breakpoint(768) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  .content-right {
+    width: 40%;
+    min-width: 40%;
+    @include breakpoint(1100) {
+      min-width: 50%;
+      width: 50%;
+    }
+    @include breakpoint(920) {
+      min-width: 70%;
+      width: 70%;
+    }
+    @include breakpoint(767) {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+  .red-title {
+    font-family: $SSB;
+    font-size: 13px;
+    color: #EF404F;
+    letter-spacing: 1.05px;
+    margin-bottom: 10px;
+    @include breakpoint(767) {
+      text-transform: uppercase;
+    }
+  }
+  .black-title {
+    font-family: $SSB;
+    font-size: 32px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+    line-height: 43px;
+    margin-bottom: 15px;
+    @include breakpoint(767) {
+      font-size: 24px;
+    }
+  }
+  .desc-content {
+    font-family: $RR;
+    font-size: 14px;
+    color: #949AA0;
+    letter-spacing: 0;
+    line-height: 25px;
+    margin-bottom: 18px;
+    width: 420px;
+    max-width: 100%;
+    @include breakpoint(920) {
+      width: 100%;
+    }
+  }
+  .check-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .item-check {
+    font-family: $RR;
+    font-size: 14px;
+    color: #2A2A2A;
+    letter-spacing: 0;
+    @include flexbox();
+    @include justify-content(flex-start);
+    @include align-items(center);
+    margin-bottom: 10px;
+    @include breakpoint(767) {
+      font-size: 13px;
+    }
+  }
+  .j-check {
+    position: relative;
+    margin-right: 10px;
+    top: -3px;
+    display: inline-block;
+    &:before {
+      content: '';
+      width: 7px;
+      height: 20px;
+      display: block;
+      border-top: 1px solid #FF777A;
+      border-left: 1px solid #FF777A;
+      position: absolute;
+      transform: rotate(-135deg) translate(125%, 25%);
+      top: 50%;
+      left: 50%;
+    }
+    &:after {
+      content: '';
+      width: 37px;
+      height: 37px;
+      background-image: linear-gradient(-180deg, #FFFFFF 0%, #FBFBFB 100%);
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.14);
+      display: block;
+      border-radius: 100px;
+    }
+  }
+}
+
+.block-content-left-fluid {
+  @include flexbox();
+  @include justify-content(center);
+  @include align-items(center);
+  width: 100%;
+  @include breakpoint(920) {
+    @include flex-direction(column-reverse);
+  }
+  .content-left {
+    width: 40%;
+    min-width: 40%;
+    text-align: right;
+    @include breakpoint(1100) {
+      min-width: 50%;
+      width: 50%;
+    }
+    @include breakpoint(920) {
+      min-width: 70%;
+      width: 70%;
+    }
+    @include breakpoint(768) {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+  .wrap-content {
+    text-align: left;
+    width: 420px;
+    margin: 0 0 0 auto;
+    @include breakpoint(920) {
+      width: 100%;
+    }
+  }
+  .content-right {
+    width: 60%;
+    min-width: 60%;
+    @include breakpoint(1100) {
+      min-width: 50%;
+      width: 50%;
+    }
+    @include breakpoint(920) {
+      min-width: 80%;
+      width: 80%;
+      margin-left: 20%;
+    }
+    @include breakpoint(768) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  .red-title {
+    font-family: $SSB;
+    font-size: 13px;
+    color: #EF404F;
+    letter-spacing: 1.05px;
+    margin-bottom: 10px;
+    @include breakpoint(767) {
+      text-transform: uppercase;
+    }
+  }
+  .black-title {
+    font-family: $SSB;
+    font-size: 32px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+    line-height: 43px;
+    margin-bottom: 15px;
+    @include breakpoint(767) {
+      font-size: 24px;
+    }
+  }
+  .desc-content {
+    font-family: $RR;
+    font-size: 14px;
+    color: #949AA0;
+    letter-spacing: 0;
+    line-height: 25px;
+    margin-bottom: 18px;
+    width: 420px;
+    max-width: 100%;
+    @include breakpoint(920) {
+      width: 100%;
+    }
+  }
+  .check-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .item-check {
+    font-family: $RR;
+    font-size: 14px;
+    color: #2A2A2A;
+    letter-spacing: 0;
+    @include flexbox();
+    @include justify-content(flex-start);
+    @include align-items(center);
+    margin-bottom: 10px;
+    @include breakpoint(767) {
+      font-size: 13px;
+    }
+  }
+  .j-check {
+    position: relative;
+    margin-right: 10px;
+    top: -3px;
+    display: inline-block;
+    &:before {
+      content: '';
+      width: 7px;
+      height: 20px;
+      display: block;
+      border-top: 1px solid #FF777A;
+      border-left: 1px solid #FF777A;
+      position: absolute;
+      transform: rotate(-135deg) translate(125%, 25%);
+      top: 50%;
+      left: 50%;
+    }
+    &:after {
+      content: '';
+      width: 37px;
+      height: 37px;
+      background-image: linear-gradient(-180deg, #FFFFFF 0%, #FBFBFB 100%);
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.14);
+      display: block;
+      border-radius: 100px;
+    }
+  }
+}
+
+.joy-connect {
+  .content-block {
+    font-family: $SSB;
+    font-size: 35px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+    line-height: 63px;
+    text-align: center;
+    @include breakpoint(767) {
+      font-size: 21px;
+      line-height: 29px;
+      padding: 15px;
+    }
+  }
+  .red-content {
+    color: #EF404F;
+  }
+  .joy-connect-content {
+    height: 490px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1920px 490px;
+    @include breakpoint(767) {
+      background-size: 1100px 275px;
+      height: 300px;
+    }
+    .container {
+      position: relative;
+    }
+  }
+}
+
+.wrap-tooltip {
+  width: 350px;
+  background-color: #fff;
+  box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.14);
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  @include transition( all .5s);
+  @include breakpoint(767) {
+    display: none !important;
+  }
+  .title-tooltip {
+    font-family: $SSB;
+    font-size: 25px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+    line-height: 43px;
+    text-align: left;
+  }
+  .desc-tooltip {
+    font-family: $RR;
+    font-size: 15px;
+    color: #202020;
+    letter-spacing: 0;
+    line-height: 25px;
+    padding-top: 15px;
+    text-align: left;
+  }
+}
+
+.wrap-image-has-tooltip.image-1,
+.wrap-image-has-tooltip.image-2,
+.wrap-image-has-tooltip.image-3 {
+  .wrap-tooltip {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 20px);
+    z-index: 9999;
+    margin-left: 20px;
+    &:before {
+      content: '';
+      width: 25px;
+      height: 25px;
+      background-color: #fff;
+      box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.06);
+      position: absolute;
+      @include transform(rotate(135deg));
+      left: -10px;
+    }
+  }
+}
+
+.wrap-image-has-tooltip.image-4 {
+  .wrap-tooltip {
+    position: absolute;
+    top: 0;
+    right: calc(100% + 20px);
+    margin-right: 20px;
+    z-index: 9999;
+    &:before {
+      content: '';
+      width: 25px;
+      height: 25px;
+      background-color: #fff;
+      box-shadow: -3px -3px 6px 0px rgba(0, 0, 0, 0.06);
+      position: absolute;
+      @include transform(rotate(135deg));
+      right: -10px;
+    }
+  }
+}
+.wrap-image-has-tooltip {
+  position: relative;
+  overflow: visible;
+  cursor: pointer;
+  img {
+    border-radius: 100%;
+    box-shadow: 0 0 0 3px transparent;
+    @include transition( all .5s);
+  }
+  &:hover {
+    img {
+      box-shadow: 0 0 0 3px rgb(25,181,193);
+    }
+    .wrap-tooltip {
+      opacity: 1;
+      visibility: visible;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+.image-1 {
+  position: absolute;
+  top: 70px;
+  left: 270px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  @include breakpoint(1199) {
+    top: 140px;
+    left: 450px;
+  }
+  @include breakpoint(991) {
+    left: 350px;
+  }
+  @include breakpoint(767) {
+    width: 90px;
+    height: 90px;
+    top: 85px;
+    left: 48%;
+  }
+}
+
+.image-2 {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  @include breakpoint(1199) {
+    top: 70px;
+    left: 200px;
+  }
+  @include breakpoint(991) {
+    left: 100px;
+  }
+  @include breakpoint(767) {
+    width: 80px;
+    height: 80px;
+    left: 25%;
+    top: 30px;
+  }
+  @include breakpoint(560) {
+    left: 10%;
+  }
+}
+
+.image-3 {
+  position: absolute;
+  top: 200px;
+  left: 595px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  @include breakpoint(1199) {
+    top: 390px;
+    left: 220px;
+  }
+  @include breakpoint(991) {
+    left: 120px;
+  }
+  @include breakpoint(767) {
+    display: none;
+  }
+}
+
+.image-4 {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  @include breakpoint(1199) {
+    top: 160px;
+    right: 120px;
+  }
+  @include breakpoint(991) {
+    right: 20px;
+  }
+  @include breakpoint(767) {
+    width: 60px;
+    height: 60px;
+    top: 100px;
+    right: 18%;
+  }
+  @include breakpoint(650) {
+    display: none;
+  }
+}

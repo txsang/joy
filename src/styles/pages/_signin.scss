@@ -1,0 +1,195 @@
+.signin {
+  min-height: 100vh;
+  .wrap-content {
+    @include flexbox();
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    @include breakpoint(991) {
+      overflow: auto;
+      padding-top: 140px;
+      position: relative;
+    }
+    @include breakpoint(767) {
+      overflow: auto;
+      padding-top: 106px;
+      position: relative;
+    }
+  }
+  .left-content {
+    min-width: 40%;
+    width: 40%;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    @include breakpoint(991) {
+      min-width: 100%;
+      width: 100%;
+    }
+    @include breakpoint(800) {
+      @include align-items(flex-end);
+      padding-bottom: 55px;
+    }
+  }
+  .right-content {
+    min-width: 60%;
+    width: 60%;
+    @include flexbox();
+    @include align-items(flex-end);
+    @include justify-content(center);
+    background-color: #6b7486;
+    position: relative;
+    @include breakpoint(991) {
+      display: none;
+    }
+    .title-content {
+      font-family: $SSB;
+      font-size: 37px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      margin-bottom: 13px;
+    }
+    .desc-content {
+      font-family: $RR;
+      font-size: 15px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      line-height: 24px;
+      width: 520px;
+      margin: 0 auto;
+    }
+    .wrapper-content {
+      position: absolute;
+      top: 300px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.custom-form {
+  width: 390px;
+  max-width: 100%;
+  padding: 0 15px;
+  .form-title {
+    font-family: $SSB;
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 58px;
+    margin-bottom: 23px;
+    text-align: center;
+  }
+  .group-input {
+    ::-webkit-input-placeholder {
+      color: #BDC5C9;
+    }
+    ::-moz-placeholder {
+      color: #BDC5C9;
+    }
+    :-ms-input-placeholder {
+      color: #BDC5C9;
+    }
+    :-moz-placeholder {
+      color: #BDC5C9;
+    }
+    .input-form {
+      background: #FFFFFF;
+      border: 1px solid #CFD6DA;
+      font-family: $RR;
+      font-size: 15px;
+      color: #000;
+      padding: 15px 18px 12px;
+      margin-bottom: 5px;
+      outline: none;
+      display: block;
+      width: 100%;
+      @include transition(all .3s);
+      &:focus {
+        box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
+      }
+    }
+    .label-content {
+      display: block;
+      font-family: $RR;
+      font-size: 10px;
+      color: #000;
+      height: 0px;
+      overflow: hidden;
+      margin-bottom: 15px;
+      @include transition(all .3s);
+    }
+  }
+
+  .group-success {
+    .input-form {
+      border-color: #5cb85c;
+      &:focus {
+        box-shadow: 0 0 5px 1px rgba(92, 184, 92, .2);
+      }
+    }
+    .label-content {
+      color: #28a745;
+      height: 14px;
+      white-space: nowrap;
+    }
+  }
+
+  .group-error {
+    .input-form {
+      border-color: #d9534f;
+      &:focus {
+        box-shadow: 0 0 5px 1px rgba(217, 83, 79, .2);
+      }
+    }
+    .label-content {
+      color: #dc3545;
+      height: 14px;
+      white-space: nowrap;
+    }
+  }
+
+  .group-warning {
+    .input-form {
+      border-color: #f0ad4e;
+      &:focus {
+        box-shadow: 0 0 5px 1px rgba(240, 173, 78, .2);
+      }
+    }
+    .label-content {
+      color: #ffc107;
+      height: 14px;
+      white-space: nowrap;
+    }
+  }
+  .btn-submit {
+    background: #ED2839;
+    border-radius: 80px;
+    font-family: $RR;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 12px 0 8px;
+    margin-top: 5px;
+    border: none;
+    width: 140px;
+    display: block;
+    margin: 5px auto 0;
+    text-transform: uppercase;
+  }
+  .form-desc {
+    font-family: $RR;
+    font-size: 13px;
+    color: #5E5C5C !important;
+    text-align: center;
+    margin-top: 30px;
+    display: block;
+    a {
+      color: #5E5C5C !important;
+    }
+  }
+}

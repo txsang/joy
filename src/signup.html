@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- include head.html -->
+  <title>Kết nối với khách hàng</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+<!-- favicon -->
+<link href="images/favicon.ico" type="image/x-icon" rel="icon">
+<!-- meta social -->
+<meta name="twitter:card" content="" />
+<meta name="twitter:site" content="" />
+<meta name="twitter:creator" content="" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content="">
+<meta property="og:title" content="" />
+<meta property="og:type" content="">
+<meta property="og:url" content="" />
+<!-- Google Font -->
+
+<style type="text/css">
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    background-color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+  }
+  .loader:after {
+    content: '';
+    background-image: url(images/partial/button-loader.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 135px;
+    height: 30px;
+    margin-left: 7px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+  }
+  .loader:before {
+    content: '';
+    background-image: url(images/partial/logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 110px;
+    height: 110px;
+    margin-bottom: 10px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+  }
+  .loader.loaded:before,
+  .loader.loaded:after,
+  .loader.loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+</style>
+  <!-- include styles.html -->
+  <!-- build:css(.) style/vendor.min.css -->
+<!-- endbuild -->
+<!-- build:css(.tmp) style/style.min.css -->
+<link rel="stylesheet" type="text/css" media="screen" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+<!-- endbuild -->
+</head>
+<body class="loading">
+  <div class="loader"></div>
+  <div class="wrapper">
+    <!-- include header.html -->
+    <header class="header-container signup-header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="container">
+        <!-- header mobile -->
+        <div class="header-mobile-content">
+          <div class="background-header-mobile"></div>
+          <div class="wrap-content">
+            <h1 class="logo"><a href="index.html" class="logo-link"><img src="images/partial/logo.png"></a></h1>
+            <ul class="top-nav-menu">
+              <li class="top-nav-menu-item"><a href="user.html" class="item-link">Người dùng</a></li>
+              <li class="top-nav-menu-item"><a href="business.html" class="item-link">Doanh nghiệp</a></li>
+            </ul>
+          </div>
+          <button class="btn-menu-mobile">
+            <span class="content-btn"></span>
+          </button>
+        </div>
+        <!-- end -->
+        <!-- header desktop -->
+        <div class="header-content">
+          <button class="btn-menu-mobile">
+            <span class="content-btn"></span>
+          </button>
+          <div class="header-content-top">
+            <a href="signup-en.html" class="item-link">English</a>
+          </div>
+          <div class="header-content-bottom">
+            <div class="header-content-left">
+              <h1 class="logo"><a href="index.html" class="logo-link"><img src="images/partial/logo.png"></a></h1>
+              <ul class="top-nav-menu">
+                <li class="top-nav-menu-item"><a href="user.html" class="item-link">Người dùng</a></li>
+                <li class="top-nav-menu-item"><a href="business.html" class="item-link">Doanh nghiệp</a></li>
+                <li class="top-nav-menu-item"><a href="" class="item-link">FAQ</a></li>
+                <li class="top-nav-menu-item"><a href="about-us.html" class="item-link">Về chúng tôi</a></li>
+                <li class="top-nav-menu-item"><a href="" class="item-link">Block</a></li>
+              </ul>
+            </div>
+            <div class="header-content-right">
+              <a href="signin.html" class="btn-signin">Đăng nhập</a>
+              <a href="signup.html" class="btn-signup waves-light">Đăng ký miễn phí</a>
+            </div>
+            <!-- header page sign in -->
+            <div class="header-content-right content-signin">
+              <span class="title-register">Bạn chưa có tài khoản?</span>
+              <a href="signup.html" class="btn-signup waves-light">Đăng ký miễn phí</a>
+            </div>
+            <!-- end -->
+            <!-- header page sing up -->
+            <div class="header-content-right content-signup">
+              <span class="title-register">Bạn đã có tài khoản?</span>
+              <a href="signin.html" class="btn-signup waves-light">Đăng nhập</a>
+            </div>
+            <!-- end -->
+          </div>
+        </div>
+        <!-- end -->
+      </div>
+    </div>
+  </div>
+</header>
+
+    <section class="main-container signin">
+      <div class="wrap-content">
+        <!-- form sign up -->
+        <div class="left-content">
+          <form class="custom-form wow fadeInDown">
+            <h2 class="form-title">Đăng ký</h2>
+            <div class="group-input group-error">
+              <input type="text" name="Account" class="input-form" placeholder="Tài khoản">
+              <label for="Account" class="label-content">Lorem ipsum dolor sit amet</label>
+            </div>
+            <div class="group-input group-success">
+              <input type="password" name="Password" class="input-form" placeholder="Mật khẩu">
+              <label for="Password" class="label-content">Lorem ipsum dolor sit amet</label>
+            </div>
+            <div class="group-input group-warning">
+              <input type="password" name="confirmPassword" class="input-form" placeholder="Nhập lại mật khẩu">
+              <label for="confirmPassword" class="label-content">Lorem ipsum dolor sit amet</label>
+            </div>
+            <div class="group-input">
+              <input type="text" name="Name" class="input-form" placeholder="Tên">
+              <label for="Name" class="label-content">Lorem ipsum dolor sit amet</label>
+            </div>
+            <div class="group-input">
+              <input type="email" name="Email" class="input-form" placeholder="Email">
+              <label for="Email" class="label-content">Lorem ipsum dolor sit amet</label>
+            </div>
+            <div class="group-input">
+              <input type="text" name="PhoneNumber" class="input-form" placeholder="Số điện thoại">
+              <label for="PhoneNumber" class="label-content">Lorem ipsum dolor sit amet</label>
+            </div>
+            <div class="group-input">
+              <input type="text" name="Address" class="input-form" placeholder="Địa chỉ">
+              <label for="Address" class="label-content">Lorem ipsum dolor sit amet</label>
+            </div>
+            <button class="btn-submit waves-light" type="submit">Đăng ký</button>
+          </form>
+        </div>
+        <!-- end -->
+        <!-- block background right -->
+        <div class="right-content">
+          <div class="wrapper-content">
+            <h2 class="title-content wow fadeInDown">Kết nối với khách hàng của bạn</h2>
+            <p class="desc-content wow fadeInDown">Kết nối khách hàng của bạn 24/7.<br>Hỗ trợ việc kinh doanh của bạn 24/7</p>
+          </div>
+          <div class="wrap-image wow fadeInUp">
+            <img src="images/form/Background.png" class="img-responsive">
+          </div>
+        </div>
+        <!-- end -->
+      </div>
+
+      <div class="clearfix"></div>
+    </section>
+  </div>
+
+  <!-- include scripts.html -->
+  <!-- build:js(.) script/vendor.min.js -->
+<!-- endbuild -->
+<!-- build:js script/script.min.js -->
+<script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="scripts/mdb.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+<!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,203 @@
+.about-us {
+  .background-header {
+    width: 100%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    @include breakpoint(1199) {
+      height: 450px;
+    }
+    @include breakpoint(991) {
+      height: 350px;
+    }
+    @include breakpoint(768) {
+      background-position: -30px center;
+    }
+    @include breakpoint(480) {
+      height: 250px;
+    }
+  }
+  .title-block {
+    font-family: $SSB;
+    font-size: 34px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 52px;
+    @include breakpoint(991) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    @include breakpoint(480) {
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+  .description-block,
+  .vision-block,
+  .patner-block {
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  .description-block {
+    padding-top: 80px;
+    .content-left {
+      width: 30%;
+      float: left;
+      padding-right: 80px;
+    }
+    .content-right {
+      width: 70%;
+      float: left;
+      padding-top: 5px;
+    }
+    .title-block {
+      margin-bottom: 30px;
+    }
+    .content-desc {
+      font-family: $RR;
+      font-size: 14px;
+      color: #575C5F;
+      letter-spacing: 0;
+      line-height: 26px;
+      margin-bottom: 26px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    @include breakpoint(1199) {
+      padding-top: 50px;
+      .content-left {
+        width: 40%;
+        padding-right: 30px;
+        margin-bottom: 10px;
+      }
+      .content-right {
+        width: 60%;
+      }
+    }
+    @include breakpoint(700) {
+      padding-top: 40px;
+      .content-left {
+        width: 100%;
+        padding-right: 0px;
+        .title-block {
+          margin-bottom: 20px
+        }
+      }
+      .content-right {
+        width: 100%;
+      }
+    }
+    @include breakpoint(480) {
+      padding-top: 20px;
+    }
+
+  }
+  .vision-block {
+    padding-top: 100px;
+    .item-visions {
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(flex-start);
+      margin-bottom: 5px;
+      @include breakpoint(480) {
+        margin-bottom: 15px;
+        @include align-items(flex-start);
+      }
+      .wrap-img {
+        min-width: 110px;
+        min-height: 110px;
+        width: 110px;
+        height: 110px;
+        @include breakpoint(480) {
+          min-width: 80px;
+          min-height: 80px;
+          width: 80px;
+          height: 80px;
+        }
+      }
+      .item-desc {
+        font-family: $RR;
+        font-size: 16px;
+        color: #575C5F;
+        letter-spacing: 0;
+        line-height: 27px;
+        @include breakpoint(480) {
+          font-size: 14px;
+          line-height: 25px;
+        }
+      }
+    }
+    @include breakpoint(1199) {
+      padding-top: 50px;
+    }
+    @include breakpoint(480) {
+      padding-top: 20px;
+      .title-block {
+        margin-bottom: 10px
+      }
+    }
+
+  }
+  .patner-block {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    .wrap-patner {
+      margin-left: -13px;
+      margin-right: -13px;
+      &:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+    }
+    .title-block {
+      margin-bottom: 50px;
+    }
+    .item-patner {
+      width: 33.3333333333%;
+      float: left;
+      padding: 0 13px;
+      @include breakpoint(480) {
+        width: 100%;
+        margin-bottom: 10px;
+        img {
+          width: 100%;
+        }
+      }
+      .wrap-img {
+        margin-bottom: 15px;
+      }
+      .patner-name {
+        text-align: center;
+        font-family: $SSB;
+        font-size: 26px;
+        color: #3E3E3E;
+        letter-spacing: 0;
+        line-height: 43px;
+      }
+      .patner-job {
+        text-align: center;
+        font-family: $RR;
+        font-size: 14px;
+        color: #949AA0;
+        letter-spacing: 0;
+        line-height: 25px;
+      }
+    }
+    @include breakpoint(1199) {
+      padding-top: 50px;
+    }
+    @include breakpoint(480) {
+      padding: 20px 0;
+      .title-block {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

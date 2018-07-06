@@ -1,0 +1,120 @@
+.footer-container {
+  background-image: -webkit-linear-gradient(-180deg, #ED2839 12%, #E74852 68%, #FF4E40 100%);
+  background-image: -moz-linear-gradient(-180deg, #ED2839 12%, #E74852 68%, #FF4E40 100%);
+  background-image: -ms-linear-gradient(-180deg, #ED2839 12%, #E74852 68%, #FF4E40 100%);
+  background-image: -o-linear-gradient(-180deg, #ED2839 12%, #E74852 68%, #FF4E40 100%);
+  background-image: linear-gradient(-180deg, #ED2839 12%, #E74852 68%, #FF4E40 100%);
+}
+.footer-content {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(space-between);
+  padding: 22px 0;
+  @include breakpoint(991) {
+    padding-top: 0;
+    @include flex-direction(column-reverse);
+  }
+  @include breakpoint(767) {
+    padding-top: 20px;
+    @include flex-direction(column);
+    .logo-footer {
+      margin-bottom: 20px;
+    }
+    .top-nav-menu {
+      display: none !important;
+    }
+    .bottom-social-list {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+  .footer-content-left {
+    color: #fff;
+    font-size: 13px;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(space-between);
+    @include breakpoint(767) {
+      @include flex-direction(column);
+      margin-bottom: 15px;
+    }
+  }
+  .footer-content-right {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(space-between);
+    @include breakpoint(600) {
+      @include flex-direction(column);
+    }
+    @include breakpoint(480) {
+      padding-top: 0;
+      @include align-items(flex-start);
+      .bottom-social-list {
+        padding-left: 0;
+        padding-bottom: 10px;
+      }
+      .top-nav-menu {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .top-nav-menu {
+    list-style: none;
+    display: inline-block;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .copyright-text {
+    font-family: $RR;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+  }
+  .top-nav-menu-item {
+    padding: 20px;
+    display: inline-block;
+    @include breakpoint(991) {
+      padding: 20px 10px;
+    }
+    @include breakpoint(480) {
+      padding: 5px 10px;
+      display: block;
+    }
+    .item-link {
+      font-size: 12px;
+      color: #fff;
+      font-family: $RR;
+      text-transform: uppercase;
+    }
+  }
+  .bottom-social-list {
+    display: inline-block;
+    padding-left: 20px;
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .social-item {
+    display: inline-block;
+    padding: 0 5px;
+    .item-link {
+      font-size: 23px;
+      color: #fff;
+      position: relative;
+      top: 1px;
+    }
+  }
+}
+
+.logo-footer {
+  margin-right: 10px;
+  height: 57px;
+  width: 57px;
+  .logo-link {
+    display: inline-block;
+  }
+  img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
+}

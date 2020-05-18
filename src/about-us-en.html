@@ -349,9 +349,13 @@ _paq.push(['enableLinkTracking']);
   </div>
   <script type="text/javascript">
     gtag('event', 'page_view', {
-      page_name: 'about-us',
-      page_category: 'en'
+      'page_name': 'about-us',
+      'page_category': 'en'
     })
+    gtag('event', 'screen_view', {
+      'screen_name': 'Home page',
+      'user_type': 'anonymous'
+    });
   </script>
   <!-- include scripts.html -->
   <!-- build:js(.) script/vendor.min.js -->
